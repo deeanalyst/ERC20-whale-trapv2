@@ -68,13 +68,14 @@ The `ERC20WhaleResponse` contract and any necessary mock contracts (for testing 
 forge script script/DeployResponseProtocol.s.sol --rpc-url <your-rpc-url> --private-key <your-private-key> --broadcast
 ```
 
-### 2. Update the Trap Contract
+### 2. Update Configuration
 
 Before deploying the trap contract, you need to update the hardcoded addresses in `src/ERC20WhaleTrap.sol`:
 
-- `responseContract`: The address of the deployed `ERC20WhaleResponse` contract.
 - `token`: The address of the ERC20 token to monitor.
 - `priceFeed`: The address of the Chainlink price feed for the token.
+
+You also need to update the `response_contract` address in the `drosera.toml` file with the address of your deployed `ERC20WhaleResponse` contract.
 
 ### 3. Deploy the Trap Contract
 

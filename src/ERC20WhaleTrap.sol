@@ -13,8 +13,7 @@ contract ERC20WhaleTrap is ITrap {
     /// @notice Monitored wallet address (whale)
     address public constant trackedAddress = 0xF38eED066703d093B20Be0A9D9fcC8684F64cdc4;
 
-    // Response contract address
-    address public constant responseContract = 0x0000000000000000000000000000000000000001;
+    
 
     /// @notice The ERC20 token to monitor
     IERC20 public constant token = IERC20(0x0000000000000000000000000000000000000002); // TODO: Replace with actual token address
