@@ -27,20 +27,8 @@ contract ERC20WhaleTrap is ITrap {
     /// @notice Threshold for price change (Chainlink decimals, e.g. 8 decimals)
     int256 public constant PRICE_THRESHOLD = 50e8;
 
-    // Optional whitelist
-    mapping(address => bool) public whitelist;
-
-    constructor() {
-        whitelist[msg.sender] = true; // initial whitelisted operator
-    }
-
-    modifier onlyWhitelisted() {
-        require(whitelist[msg.sender], "Not whitelisted");
-        _;
-    }
-
     /// @notice Collects current tracked data: token balance + price
-    function collect() external view override onlyWhitelisted returns (bytes memory) {
+    function collect() external view override returns (bytes memory) {
         uint256 tokenBalance = token.balanceOf(trackedAddress);
         (, int256 price, , , ) = priceFeed.latestRoundData();
         return abi.encode(trackedAddress, tokenBalance, price);
