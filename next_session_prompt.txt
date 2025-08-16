@@ -1,6 +1,0 @@
-Hello! To get you back up to speed on our ERC20 Whale Trap project, please read the following two files:
-
-1.  `query.txt`: This contains my original, detailed request.
-2.  `session_summary.txt`: This file details everything we accomplished in our last session, including all the code changes, tests, and documentation we created.
-
-After you have reviewed them, let me know you're ready and we can continue.
