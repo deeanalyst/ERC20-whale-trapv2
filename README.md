@@ -21,7 +21,7 @@ This project implements a Drosera trap to monitor an ERC20 token for whale activ
 
 - [Foundry](https://getfoundry.sh/)
 - [Bun](https://bun.sh/)
-- [Drosera CLI](https://docs.drosera.io/drosera/getting-started/installation)
+- Drosera CLI (Installation instructions can be found in the official [Drosera GitHub](https://github.com/drosera-network) and their community resources)
 
 ### Installation
 
@@ -79,4 +79,4 @@ You also need to update the `response_contract` address in the `drosera.toml` fi
 
 ### 3. Deploy the Trap Contract
 
-The `ERC20WhaleTrap` contract must be deployed using the Drosera CLI. Please refer to the [Drosera documentation](https://docs.drosera.io/drosera/getting-started/deploying-a-trap) for instructions on how to deploy a trap.
+The `ERC20WhaleTrap` contract must be deployed using the Drosera CLI. Please refer to the official Drosera resources you have (e.g., their GitHub repositories, workshops, and Notion FAQs) for the most up-to-date instructions on how to deploy a trap.
