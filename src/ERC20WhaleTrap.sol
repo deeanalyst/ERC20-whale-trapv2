@@ -11,15 +11,15 @@ interface IERC20 {
 /// @notice ERC20 Whale Trap — monitors token balance + price feed changes
 contract ERC20WhaleTrap is ITrap {
     /// @notice Monitored wallet address (whale)
-    address public constant trackedAddress = 0xF38eED066703d093B20Be0A9D9fcC8684F64cdc4;
+    address public constant trackedAddress = 0xAb5801a7D398351b8bE11C439e05C5B3259aeC9B;
 
     
 
     /// @notice The ERC20 token to monitor
-    IERC20 public constant token = IERC20(0x0000000000000000000000000000000000000002); // TODO: Replace with actual token address
+    IERC20 public constant token = IERC20(0x26aeAb946Be6f4619dBBF88Fcc3C82C68506f9Ab); // TODO: Replace with actual token address
 
     /// @notice The Chainlink price feed for the token
-    AggregatorV3Interface public constant priceFeed = AggregatorV3Interface(0x0000000000000000000000000000000000000003); // TODO: Replace with actual price feed address
+    AggregatorV3Interface public constant priceFeed = AggregatorV3Interface(0x076BeCb937C163c6a963917CB970e2125B67a927); // TODO: Replace with actual price feed address
 
     /// @notice Threshold for token balance delta (in token's smallest unit)
     uint256 public constant BALANCE_THRESHOLD = 1000 * 1e18;
