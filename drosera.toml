@@ -15,4 +15,4 @@ max_number_of_operators = 2
 block_sample_size = 2
 private_trap = true
 whitelist = ["0xa17b1106BF46ED526a77CE85E69031277adA4DC1"]
-trap_bytecode_hash = "96604b4ee3f3cec58a305715881eca618f88e641c042eeb705560b5a1fa9caff"
+trap_bytecode_hash = "64b6166851079f2a60347d0fb91ca668fa9077f05da4b867c5c817244be96ccc"
