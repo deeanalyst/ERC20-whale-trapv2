@@ -1,4 +1,15 @@
-# Local session summaries
+# Foundry
+out/
+cache/
+broadcast/
+
+# Node
+node_modules/
+
+# Environment
+.env
+
+# Gemini CLI
 session_summary.txt
 query.txt
 how_it_works.txt

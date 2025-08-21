@@ -7,11 +7,12 @@ drosera_address = "0x91cB447BaFc6e0EA0F4Fe056F5a9b1F14bb06e5D"
 
 [traps.erc20whaletrap]
 path = "out/ERC20WhaleTrap.sol/ERC20WhaleTrap.json"
-response_contract = "0xYourResponseContractAddress" # TODO: Replace with your deployed ERC20WhaleResponse contract address
+response_contract = "0x0cb8e05bde37321c139b3688523379dE89de110f"
 response_function = "respondWithERC20Context(address,uint256,uint256,int256,int256)"
 cooldown_period_blocks = 10
 min_number_of_operators = 1
 max_number_of_operators = 2
 block_sample_size = 2
 private_trap = true
-whitelist = []
+whitelist = ["0xa17b1106BF46ED526a77CE85E69031277adA4DC1"]
+trap_bytecode_hash = "96604b4ee3f3cec58a305715881eca618f88e641c042eeb705560b5a1fa9caff"
